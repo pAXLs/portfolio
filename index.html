@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Александра Павленко — Frontend & Game Developer. Современные веб-приложения, игры и интерактивные интерфейсы.">
+  <meta name="author" content="Александр Павленко">
+  <title>Александр Павленко | Frontend & Game Developer — Портфолио</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/avatar.svg">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span><span class="logo-text">AXL</span><span class="logo-dot">.</span><span class="logo-sub">DEV</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Главная</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Стек</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Переключить тему оформления">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- CTA Header Button -->
+        <a href="#contact" class="btn btn-sm btn-outline header-cta">Связаться</a>
+
+        <!-- Mobile Burger Button -->
+        <button class="burger" id="burger-btn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="section hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge status-badge">
+            <span class="status-pulse"></span>
+            <span>Открыт для новых проектов и стажировок</span>
+          </div>
+          <h1 class="hero-title">
+            Привет, я <span class="gradient-text">Александр</span><br>
+            <span class="typing-container"><span class="typing-text">Frontend & Game Dev</span><span class="cursor">|</span></span>
+          </h1>
+          <p class="hero-description">
+            Студент ГУАП (Санкт-Петербург). Разрабатываю современные, быстрые и визуально насыщенные веб-интерфейсы, интерактивные веб-сервисы и игры на Godot. Фокусируюсь на чистом коде, отзывчивом дизайне и бесшовном пользовательском опыте.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>Смотреть работы</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Обсудить проект</a>
+          </div>
+          
+          <!-- Key Metrics -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Года практики</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Проектов в коде</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Ручная верстка</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card glass-panel">
+            <div class="avatar-glow"></div>
+            <div class="avatar-wrapper">
+              <img src="assets/avatar.svg" alt="Александр Павленко — Аватар" class="avatar-img" width="340" height="340">
+            </div>
+            <div class="avatar-chips">
+              <div class="floating-chip chip-left">
+                <span class="chip-icon">⚡</span>
+                <span>Fast & Responsive</span>
+              </div>
+              <div class="floating-chip chip-right">
+                <span class="chip-icon">🎮</span>
+                <span>Godot Engine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Обо мне</span>
+          <h2 class="section-title">Создаю интерфейсы, в которых приятно находиться</h2>
+          <p class="section-subtitle">Сочетаю фундаментальные инженерные знания аэрокосмического университета с современными веб-технологиями и геймдевом.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-col glass-panel">
+            <h3 class="card-title">Кто я и чем занимаюсь</h3>
+            <p class="text-lead">
+              Я специализируюсь на создании адаптивных веб-сайтов, сложных интерфейсов и интерактивных решений. Мой подход базируется на отказе от слепого копирования шаблонов конструкторов: каждый проект получает индивидуальную архитектуру, оптимизированные стили и чистый JavaScript.
+            </p>
+            <p>
+              В академической деятельности в ГУАП углубленно изучаю алгоритмы, программную инженерию и компьютерные сети. Параллельно проектирую игры на Godot, что дает мне глубокое понимание механик рендеринга, работы стейт-машин и производительности анимаций.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">🎯</div>
+                <div>
+                  <h4>Адаптивность из коробки</h4>
+                  <p>Каждый экран безупречно отображается от смартфонов (320px) до 4K-мониторов.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🚀</div>
+                <div>
+                  <h4>Высокая производительность</h4>
+                  <p>Чистый CSS Grid/Flexbox, оптимизированная графика и легковесный код без лишних библиотек.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">✨</div>
+                <div>
+                  <h4>Внимание к микровзаимодействиям</h4>
+                  <p>Плавные переходы, аккуратная типографика и отзывчивые интерфейсные состояния.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards -->
+          <div class="about-features-col">
+            <div class="feature-card glass-panel">
+              <span class="feature-num">01</span>
+              <h4>Web & Frontend Development</h4>
+              <p>Семантическая разметка HTML5, нативная валидация, продвинутый CSS/SCSS с CSS Variables и современный ES6+ JavaScript.</p>
+            </div>
+            <div class="feature-card glass-panel">
+              <span class="feature-num">02</span>
+              <h4>UI/UX & Векторная графика</h4>
+              <p>Создание адаптивных SVG-элементов, проработка темной/светлой палитры, адаптивные сетки и микроанимации.</p>
+            </div>
+            <div class="feature-card glass-panel">
+              <span class="feature-num">03</span>
+              <h4>Game Development & Логика</h4>
+              <p>Разработка игровых механик на Godot (GDScript), построение конечных автоматов, работа со спрайтами и физикой.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Portfolio / Gallery Section -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Галерея проектов</span>
+          <h2 class="section-title">Избранные практические кейсы</h2>
+          <p class="section-subtitle">Сетка работ с ручной проработкой деталей, адаптивной графикой и интерактивным предпросмотром.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">Все проекты</button>
+          <button class="filter-btn" data-filter="web">Веб-разработка</button>
+          <button class="filter-btn" data-filter="gamedev">GameDev</button>
+          <button class="filter-btn" data-filter="design">UI/UX Дизайн</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="portfolio-grid">
+          <!-- Card 1 -->
+          <article class="project-card glass-panel" data-category="gamedev">
+            <div class="project-img-box">
+              <img src="assets/project1.svg" alt="Devil Hunter Game Preview" class="project-img" loading="lazy">
+              <span class="project-badge gamedev-badge">Godot Engine</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Devil Hunter Game</h3>
+              <p class="project-desc">2D Action-RPG с кастомным контроллером персонажа, механикой комбо-ударов, поведением противников и процедурной генерацией уровней на GDScript.</p>
+              <div class="project-tags">
+                <span class="tag">Godot</span>
+                <span class="tag">GDScript</span>
+                <span class="tag">Pixel Art</span>
+                <span class="tag">State Machine</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-link open-modal-btn" data-id="project1">Подробнее &rarr;</button>
+                <a href="https://github.com/pAXLs/devil_hanter_game" target="_blank" rel="noopener noreferrer" class="btn-link-ext" title="GitHub Репозиторий">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card glass-panel" data-category="web">
+            <div class="project-img-box">
+              <img src="assets/project2.svg" alt="Crypto SaaS Dashboard Preview" class="project-img" loading="lazy">
+              <span class="project-badge web-badge">Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Crypto SaaS Dashboard</h3>
+              <p class="project-desc">Интерактивная панель мониторинга с интерактивными графиками, обновлением котировок в реальном времени, фильтрами и светлой/темной темами.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript ES6</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">REST API</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-link open-modal-btn" data-id="project2">Подробнее &rarr;</button>
+                <a href="#portfolio" class="btn-link-ext" title="Демо">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card glass-panel" data-category="design">
+            <div class="project-img-box">
+              <img src="assets/project3.svg" alt="Pulse UI Design System Preview" class="project-img" loading="lazy">
+              <span class="project-badge design-badge">UI/UX Kit</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Pulse UI Design System</h3>
+              <p class="project-desc">Масштабируемая дизайн-система в Figma с автоматическим layout, токенами цвета, типографики и переиспользуемыми компонентами для веб-приложений.</p>
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Design Tokens</span>
+                <span class="tag">Accessibility</span>
+                <span class="tag">SVG Icons</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-link open-modal-btn" data-id="project3">Подробнее &rarr;</button>
+                <a href="#portfolio" class="btn-link-ext" title="Дизайн-макет">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card glass-panel" data-category="web">
+            <div class="project-img-box">
+              <img src="assets/project4.svg" alt="EcoSmart IoT Landing Preview" class="project-img" loading="lazy">
+              <span class="project-badge web-badge">Landing Page</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EcoSmart IoT Landing</h3>
+              <p class="project-desc">Презентационный лендинг умных контроллеров для дома с 3D-анимациями при скролле, интерактивным калькулятором экономии и плавной навигацией.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Animations</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Flexbox</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-link open-modal-btn" data-id="project4">Подробнее &rarr;</button>
+                <a href="#portfolio" class="btn-link-ext" title="Демо">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="project-card glass-panel" data-category="web">
+            <div class="project-img-box">
+              <img src="assets/project5.svg" alt="SUAI StudyFlow Preview" class="project-img" loading="lazy">
+              <span class="project-badge web-badge">Образовательный портал</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SUAI StudyFlow</h3>
+              <p class="project-desc">Веб-приложение для студентов университета ГУАП: учет дедлайнов лабораторных работ, генерация отчетов по ГОСТ и совместное управление задачами.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">ГОСТ 7.32</span>
+              </div>
+              <div class="project-footer">
+                <button class="btn-link open-modal-btn" data-id="project5">Подробнее &rarr;</button>
+                <a href="#portfolio" class="btn-link-ext" title="Репозиторий">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Компетенции</span>
+          <h2 class="section-title">Стек технологий & Инструменты</h2>
+          <p class="section-subtitle">Технологический арсенал, который я ежедневно применяю в работе и учебе.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3>Frontend Разработка</h3>
+            </div>
+            <ul class="skill-items">
+              <li>
+                <div class="skill-name-bar">
+                  <span>HTML5 / Semantic / BEM</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 95%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>CSS3 / Flexbox / Grid / Animations</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>JavaScript (ES6+ / DOM / Async)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>Адаптивность (Mobile First)</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 95%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">⚙️</span>
+              <h3>Бэкенд, GameDev & Языки</h3>
+            </div>
+            <ul class="skill-items">
+              <li>
+                <div class="skill-name-bar">
+                  <span>Godot Engine / GDScript</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 80%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>Python (Скрипты, Автоматизация, API)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>Git / GitHub / GitHub Pages</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>REST API / JSON / WebSockets</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 80%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🛠️</span>
+              <h3>UI/UX & Инструменты</h3>
+            </div>
+            <ul class="skill-items">
+              <li>
+                <div class="skill-name-bar">
+                  <span>Figma (Прототипы, Сетки, Компоненты)</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>Оптимизация SVG & Графика</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>Chrome DevTools & Тестирование</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 90%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-name-bar">
+                  <span>Оформление документов по ГОСТ</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress"><div class="progress-fill" style="width: 95%;"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Contact Section & Feedback Form -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Обратная связь</span>
+          <h2 class="section-title">Давайте обсудим ваш проект</h2>
+          <p class="section-subtitle">Заполните форму ниже или свяжитесь со мной напрямую через мессенджеры и почту.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info & QR Box -->
+          <div class="contact-info glass-panel">
+            <h3>Контактная информация</h3>
+            <p>Всегда открыт для интересных предложений, задач по фронтенду, совместной разработки игр и учебных проектов.</p>
+            
+            <div class="contact-details">
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <span class="detail-label">Телефон:</span>
+                  <a href="tel:+79991234567" class="detail-link">+7 (999) 123-45-67</a>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="detail-label">Электронная почта:</span>
+                  <a href="mailto:pavlenko.aleksandr0708@gmail.com" class="detail-link">pavlenko.aleksandr0708@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="detail-label">Локация:</span>
+                  <span class="detail-text">Россия, Санкт-Петербург (ГУАП)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- QR Code Card Requirement -->
+            <div class="qr-card">
+              <div class="qr-image-wrapper">
+                <img src="assets/qr-code.svg" alt="QR-код для быстрого перехода на сайт" class="qr-img" width="120" height="120">
+              </div>
+              <div class="qr-text">
+                <span class="qr-badge">Быстрый переход</span>
+                <p>Наведите камеру смартфона, чтобы открыть сайт на мобильном устройстве</p>
+                <button class="btn-copy-url" id="copy-url-btn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  Скопировать ссылку
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback Form -->
+          <div class="contact-form-container glass-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <h3 class="form-title">Отправить сообщение</h3>
+              <p class="form-subtitle">Заполните поля, и я отвечу в течение нескольких часов.</p>
+              
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="user-name">Ваше имя <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="user-name" name="name" placeholder="Например, Александр" required autocomplete="name">
+                  <span class="input-icon">👤</span>
+                </div>
+                <span class="error-msg" id="name-error">Пожалуйста, укажите ваше имя (минимум 2 символа).</span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="user-email">Ваш Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="user-email" name="email" placeholder="example@mail.ru" required autocomplete="email">
+                  <span class="input-icon">✉️</span>
+                </div>
+                <span class="error-msg" id="email-error">Введите корректный email (должен содержать символ @ и домен).</span>
+              </div>
+
+              <!-- Subject Select -->
+              <div class="form-group">
+                <label for="user-subject">Тема обращения</label>
+                <div class="input-wrapper select-wrapper">
+                  <select id="user-subject" name="subject">
+                    <option value="freelance">Веб-разработка / Лендинг</option>
+                    <option value="gamedev">GameDev / Проект на Godot</option>
+                    <option value="job">Стажировка / Вакансия</option>
+                    <option value="other">Другой вопрос</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="user-message">Ваше сообщение <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="user-message" name="message" rows="4" placeholder="Опишите задачу или проект..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error">Пожалуйста, напишите сообщение (минимум 10 символов).</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span class="btn-text">Отправить сообщение</span>
+                <span class="btn-spinner" style="display: none;"></span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <span class="logo-bracket">&lt;</span><span class="logo-text">AXL</span><span class="logo-dot">.</span><span class="logo-sub">DEV</span><span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Портфолио веб-разработчика и геймдев-энтузиаста. Разработано в рамках практической работы с ручной версткой по стандартам ГОСТ.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#skills">Стек навыков</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+
+        <!-- Socials & Direct Links -->
+        <div class="footer-socials-col">
+          <h4>Мы на связи</h4>
+          <div class="social-icons">
+            <!-- GitHub -->
+            <a href="https://github.com/pAXLs" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub профиль">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/pAXLs" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.536-.196 1.006.128.833.912z"/></svg>
+            </a>
+            <!-- VK -->
+            <a href="https://vk.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="ВКонтакте">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.072-2.302.99-2.931 2.05-1.582 1.056 1.346 1.585 2.497 2.922 2.497h2.247c1.077 0 1.577-.506 1.189-1.503-.497-1.282-2.203-3.151-2.42-3.46-.22-.31-.161-.444 0-.712.162-.268 1.385-1.97 1.564-2.658.18-.687-.123-1.026-.814-1.026h-2.222c-.672 0-.96.347-1.127.755-.38 1.01-1.464 2.802-2.006 2.802-.216 0-.317-.1-.317-.655V8.535c0-.665-.192-.966-.745-.966H9.72c-.416 0-.665.31-.665.6 0 .627.935.772 1.031 2.535v3.834c0 .84-.152.994-.485.994-.888 0-3.053-3.177-4.34-6.814-.247-.7-.492-.953-1.164-.953H1.854C1.04 7.73 1 8.1 1 8.535c0 1.134 1.45 6.78 6.755 14.2 3.535 5.016 8.513 4.8 9.387 4.8h2.02c-.886 0-1.89-1.748-6-8.541z"/></svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:pavlenko.aleksandr0708@gmail.com" class="social-btn" aria-label="Написать на почту">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+          <div class="footer-contact-links">
+            <a href="tel:+79991234567" class="footer-tel">📞 +7 (999) 123-45-67</a>
+            <a href="mailto:pavlenko.aleksandr0708@gmail.com" class="footer-mail">✉️ pavlenko.aleksandr0708@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Александр Павленко (AXL). Все права защищены.
+        </p>
+        <p class="footer-meta">
+          Сайт-визитка / портфолио • Санкт-Петербург, ГУАП
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Project Preview -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" id="modal-close-btn" aria-label="Закрыть окно">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Content injected dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-notify" role="alert" aria-live="assertive">
+    <div class="toast-icon">✅</div>
+    <div class="toast-body">
+      <h4 class="toast-title" id="toast-title">Успешно!</h4>
+      <p class="toast-msg" id="toast-msg">Ваше сообщение успешно отправлено.</p>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Вернуться наверх">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
